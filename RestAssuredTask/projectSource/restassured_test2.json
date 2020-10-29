@@ -1,0 +1,12 @@
+{
+	"bookingdates": {
+		"checkin": "2020-12-07",
+		"checkout": "2020-12-05"
+	},
+	"depositpaid": false,
+	"firstname": "Cinthia",
+	"lastname": "Pereira",
+	"roomid": 1,
+	"email": "cinthia.barbosa.pereira+2@gmail.com",
+	"phone": "+4917625567131"
+}
