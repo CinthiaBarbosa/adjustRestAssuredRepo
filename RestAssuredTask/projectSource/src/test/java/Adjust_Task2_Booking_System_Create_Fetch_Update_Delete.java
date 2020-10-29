@@ -68,8 +68,19 @@ public class Adjust_Task2_Booking_System_Create_Fetch_Update_Delete {
     	response();
 	//store booking id for further use
 	id = response1.path("bookingid");
-	}
-
+	
+	//Verify same booking cannot be created again (same room, same date)
+	
+	given().
+		header("Content-Type", "application/json").
+		body(jsonfile1).
+	when().
+		post("/booking/").
+	then().
+		statusCode(409);
+}
+	
+	
 	@Test
 	void test_2_fetch_created_booking_by_id() {
 
